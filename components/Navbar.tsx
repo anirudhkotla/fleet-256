@@ -1,4 +1,5 @@
 import { Bell, Search, User } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   return (
@@ -8,10 +9,11 @@ const Navbar = () => {
         <input
           type="text"
           placeholder="Search projects or tasks..."
-          className="bg-transparent border-none focus:ring-0 text-sm ml-2 w-full"
+          className="bg-transparent border-none focus:ring-0 text-sm ml-2 w-full outline-none"
         />
       </div>
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-2 sm:space-x-4">
+        <ThemeToggle />
         <button className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full relative">
           <Bell size={20} />
           <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-red-500 rounded-full border-2 border-white dark:border-gray-800"></span>
